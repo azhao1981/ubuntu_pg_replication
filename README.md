@@ -15,9 +15,10 @@
   ```
   root@pg:~# apt-get install postgresql-9.2
   root@pg:~# rvm install 1.9.3
+  ```
 
 2. postgresql:
-
+  ```
   postgres@pg:~$ git clone https://github.com/sarmiena/ubuntu_pg_replication.git
   postgres@pg:~$ ./ubuntu_pg_replication/config_generator --help; # -m and -f are required
   postgres@pg:~$ ./ubuntu_pg_replication/config_generator --memory 2048 --file /etc/postgresql/9.2/main/postgresql.conf
@@ -41,4 +42,5 @@
   
   root@pg:~# sysctl -p /etc/sysctl.d/30-postgresql-shm.conf
   root@pg:~# su - postgres
+  ```
   
